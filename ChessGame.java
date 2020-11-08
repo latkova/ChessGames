@@ -17,6 +17,7 @@ public class ChessGame {
         String innerPiece_3;
         String innerPiece_4;
         String innerPiece_5;
+        String innerPiece_6;
 
         userPiece_1 = sc.next();
         innerPiece_1 = "king";
@@ -24,6 +25,7 @@ public class ChessGame {
         innerPiece_3 = "knight";
         innerPiece_4 = "queen";
         innerPiece_5 = "rook";
+        innerPiece_6 = "pawn";
 
         if (userPiece_1.equals(innerPiece_1)){
             waysNumber = 4 * (64 - 4) + 6 * 4 * (64 - 6) + 6 * 6 * (64 - 9);
@@ -48,6 +50,11 @@ public class ChessGame {
         if (userPiece_1.equals(innerPiece_5)) {
             waysNumber = 64 * (64 - 15);
             System.out.println(waysNumber + " ways  of setting up chess " + innerPiece_5 + "s to avoid them of being captured");
+        }
+
+        if (userPiece_1.equals(innerPiece_6)) {
+            waysNumber = 14 * (64 - 2) + 42 * (64 - 3);
+            System.out.println(waysNumber + " ways  of setting up chess " + innerPiece_6 + "s to avoid them of being captured");
         }
 
         else {
