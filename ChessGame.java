@@ -53,12 +53,9 @@ public class ChessGame {
         }
 
         if (userPiece_1.equals(innerPiece_6)) {
-            waysNumber = 14 * (64 - 2) + 42 * (64 - 3);
-            System.out.println(waysNumber + " ways  of setting up chess " + innerPiece_6 + "s to avoid them of being captured");
-        }
+                waysNumber = 14 * (64 - 2) + 42 * (64 - 3);
+                System.out.println(waysNumber + " ways  of setting up chess " + innerPiece_6 + "s to avoid them of being captured");
+            }
 
-        else {
-            System.out.println("Program for your chess piece " + userPiece_1 + " is still in process...");
-        }
     }
 }
