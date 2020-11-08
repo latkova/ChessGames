@@ -6,22 +6,21 @@ import java.util.Scanner;
 public class ChessGame {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
+      
         System.out.println("Enter chess piece (king, queen, rook, knight, bishop, or pawn): ");
-
+        
+        Scanner sc = new Scanner(System.in);
         int waysNumber;
-
         String userPiece_1, innerPiece_1;
         String innerPiece_2;
         String innerPiece_3;
+        
         userPiece_1 = sc.next();
         innerPiece_1 = "king";
         innerPiece_2 = "bishop";
         innerPiece_3 = "knight";
 
         if (userPiece_1.equals(innerPiece_1)){
-
             waysNumber = 4 * (64 - 4) + 6 * 4 * (64 - 6) + 6 * 6 * (64 - 9);
             System.out.println(waysNumber + " ways  of setting up chess " + innerPiece_1 + "s to avoid them of being captured");
        }
